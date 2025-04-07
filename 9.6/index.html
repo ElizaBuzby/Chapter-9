@@ -28,15 +28,16 @@
 
     <main>
         <form method="post" action="http://webdevbasics.net/scripts/demo.php">
-            <fieldset>
-                <legend>Contact Information</legend>
-            <label>First Name: <input type="text" name="fname" id="fname"></label><br><br>
-            <label>Last Name: <input type="text" name="lname" id="lname"></label><br><br>
-            <label>Email: <input type="text" name="email" id="email"></label><br><br>
-            <label for="comments">Comments:</label><br> <textarea name="comments" id="comments" rows="4" cols="40"></textarea><br><br>
-            <input type="submit" value="Contact">
-            <input type="reset">
-            </fieldset>
+            <label for="myName">*Name:</label>
+            <input type="text" name="myName" id="myName" required="required"><br><br>
+            <label for="myEmail">*Email: 
+            <input type="email" name="myEmail" id="myEmail" required="required"></label><br><br>
+            <label for="myRating">Rating (1 - 10):</label>
+            <input type="range" name="myRating" id="myRating" min="1" max="10"><br><br>
+            <label for="myComments">*Comments:</label>
+            <textarea name="myComments" id="my Comments" rows="2" cols="20" required="required">
+            </textarea><br><br>
+            <input id="mySubmit" type="Submit" value="Submit"> 
         </form>
     </main>
 </body>
